@@ -1,0 +1,16 @@
+button{
+    border-radius: 10px;
+    padding: 0 25px;
+    margin: 0 25px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px;
+    cursor: pointer;
+    background:rgb(57, 151, 57);
+
+  &:hover {
+        background:rgb(152, 227, 23) ;
+    }
+
+    
+   
+}
