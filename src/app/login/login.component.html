@@ -1,20 +1,23 @@
+<div class="login">
+    <form [formGroup]="login" (ngSubmit)="Submit()">
 
-    <div class="login">
-        <form [formGroup]="login" (ngSubmit)="Submit()">
+        <div class="form-field">
+            <label>Username</label>
+            <input formControlName="username" type="text">
+        </div>
 
-            <div class="form-field">
-                <label>Username</label>
-                <input formControlName="username" type="text">
-            </div>
+        <div class="form-field">
+            <label>Password</label>
+            <input formControlName="password" type="password">
+        </div>
 
-            <div class="form-field">
-                <label>Password</label>
-                <input formControlName="password" type="password">
-            </div>
+        <div class="form-field">
+            <label>Confirm Password</label>
+            <input formControlName="confirmPassword" type="password">
+        </div>
 
-            <div class="form-field">
-                <button class="login" type="submit">Login</button>
-            </div>
-
-        </form>
-    </div>
+        <div class="form-field">
+            <button class="Signin" type="submit">Login</button>
+        </div>
+    </form>
+</div>

@@ -1,16 +1,34 @@
-button{
-    border-radius: 10px;
-    padding: 0 25px;
-    margin: 0 25px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 5px;
-    cursor: pointer;
-    background:rgb(57, 151, 57);
+input[type=text],[type=password]{
+    background-color: rgb(22, 137, 49);
+    margin: 0 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px;
+    display: inline-block;
 
-  &:hover {
-        background:rgb(152, 227, 23) ;
-    }
+}
 
+.login{
+    background-color: rgb(71, 225, 133);
+    width: 420px;
+    padding:20px;
+    margin:10 auto;
+    border-radius: 5px;
+}
     
-   
+
+
+button{
+    background-color: rgb(113, 137, 114);
+    margin:0 35px;
+    padding:0 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 4px;
+
+    &:hover{
+        background-color: rgb(22, 137, 49);
+    }
 }

@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormComponent } from './form.component';
+import { RegistrationComponent } from './registration.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Route, RouterModule, Routes } from '@angular/router';
 
-
-
-const route:Routes =[
+const route:Routes=[
   {
     path:'',
-    component: FormComponent
+    component:RegistrationComponent
   }
 ]
+
 @NgModule({
   declarations: [
-    FormComponent
+    RegistrationComponent
   ],
   imports: [
     CommonModule,
+  
     ReactiveFormsModule,
-    RouterModule.forChild(route), 
+    RouterModule.forChild(route),
   ]
 })
-export class FormModule { }
+export class RegistrationModule { }
