@@ -7,27 +7,27 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent  implements OnInit{
+export class LoginComponent implements OnInit{
+
 
   public login!:FormGroup;
 
-
   constructor(
-   public lc:FormBuilder,
-   public router:Router,
-
+    public fb:FormBuilder,
+    public router:Router,
   ){
 
   }
-
   ngOnInit(): void {
-    this.login= this.lc.group({
-      username:['',Validators.required],
-      password:['',[Validators.required, Validators.minLength(5), Validators.maxLength(10)]]
+    this.login= this.fb.group({
+      username:['', Validators.required],
+      password:['',[Validators.required, Validators.minLength(5),Validators.maxLength(10)]],
+      confirmPassword:['',[Validators.required, Validators.minLength(5), Validators.maxLength(10)]]
     })
   }
 
   Submit(){
-   this.router.navigate(['/dashboard'])
+    this.router.navigate(['/dashboard'])
   }
+
 }

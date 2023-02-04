@@ -1,18 +1,4 @@
-.body{
-    margin:0;
-    padding:0;
 
-    .form{
-        background-color:  #97a4f6;
-        margin:20px auto;
-        padding: 20px auto;
-        font-family: 'Times New Roman', Times, serif;
-        border-radius: 2px;
-        cursor:pointer;
-        box-shadow:10px ;
-        &:hover{
-            background-color: rgb(147, 133, 240);
-        }
-    }
-
+button{
+    background-color: rgb(31, 31, 226);
 }
